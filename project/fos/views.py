@@ -3,6 +3,6 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.db import connection
 
-def home(request):
+def index(request):
     if request.method == 'GET':
-        return render(request, 'fos/home.html')
+        return render(request, 'fos/index.html')
